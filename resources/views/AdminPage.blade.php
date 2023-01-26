@@ -83,9 +83,9 @@
                             placeholder="$10" required="">
                     </div>
                     <div>
-                        <label for="item-weight"
-                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Age? (older than) </label>
-                        <input type="number" name="item-weight" id="item-weight"
+                        <label for="age" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Age?
+                            (older than) </label>
+                        <input type="number" name="age" id="age"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                             placeholder="12" required="">
                     </div>
@@ -134,6 +134,21 @@
                             <option value="0">NO</option>
                             <option value="1">Yes</option>
                         </select>
+                    </div>
+
+                    <div>
+                        <label for="web_site"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Web site name:</label>
+                        <input type="text" name="web_site" id="web_site"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Ex: IHerb" required="">
+                    </div>
+                    <div>
+                        <label for="URL"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Web site URL:</label>
+                        <input type="text" name="URL" id="URL"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="URL" required="">
                     </div>
 
                     <div class="sm:col-span-2">
