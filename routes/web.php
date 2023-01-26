@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SurveyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -37,3 +39,8 @@ Route::post('users/login', [UsersController::class, 'loginUser']);
 
 Route::get('/survey', [SurveyController::class, "showSurveyPage"]);
 Route::post('/survey', [SurveyController::class, "submitSurvey"]);
+
+
+//Admin
+Route::get("/adminPage",[AdminController::class, "showAdminPage"]);
+Route::post("/post_product",[ProductController::class, "createPost"]);

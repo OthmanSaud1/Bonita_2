@@ -46,5 +46,8 @@ class User extends Authenticatable
     public function hair_surveys() {
         return $this->hasOne(HairSurvey::class, 'user_id');
     }
+    public function products(){
+        return $this->hasmany(Product::class, 'posted_by');
+    }
 
 }
